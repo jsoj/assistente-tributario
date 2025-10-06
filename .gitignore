@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Django
+*.log
+db.sqlite3
+db.sqlite3-journal
+/static/
+/media/
+*.pot
+*.pyc
+local_settings.py
+
+# Environment
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Data (large files, gitignored)
+/data/raw/*
+/data/cleaned/*
+/data/enriched/*
+/data/vectordb/*
+
+# Keep directory structure
+!/data/raw/.gitkeep
+!/data/cleaned/.gitkeep
+!/data/enriched/.gitkeep
+!/data/vectordb/.gitkeep
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Distribution
+build/
+dist/
+*.egg-info/
