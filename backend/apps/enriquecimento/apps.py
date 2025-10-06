@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class EnriquecimentoConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'enriquecimento'
+    name = 'apps.enriquecimento'
