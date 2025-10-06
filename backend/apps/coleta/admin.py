@@ -98,6 +98,10 @@ class DocumentoFonteAdmin(admin.ModelAdmin):
         ('Identificação', {
             'fields': ['fonte', 'titulo', 'tipo_documento', 'identificador_externo']
         }),
+        ('Upload Manual', {
+            'fields': ['arquivo_upload'],
+            'description': 'Envie um arquivo PDF/HTML para processar automaticamente'
+        }),
         ('Metadados do Documento', {
             'fields': ['numero_documento', 'orgao_emissor', 'data_publicacao']
         }),

@@ -109,6 +109,14 @@ class DocumentoFonte(models.Model):
     )
     tamanho_bytes = models.IntegerField(default=0)
 
+    # Upload manual de arquivo
+    arquivo_upload = models.FileField(
+        upload_to='uploads/%Y/%m/',
+        null=True,
+        blank=True,
+        help_text='Arquivo PDF/HTML enviado manualmente'
+    )
+
     # Metadados do documento
     data_publicacao = models.DateField(null=True, blank=True)
     orgao_emissor = models.CharField(max_length=200, blank=True)
